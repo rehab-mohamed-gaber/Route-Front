@@ -1,0 +1,71 @@
+.Clear-Fix
+{
+    clear: both;
+}
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h2{
+    font-family: 'Dancing Script', cursive;
+}
+p
+{
+    padding: 20px 0px;
+    color: #888;
+}
+.Restaurant
+{
+    text-align: center;
+}
+.container
+{
+    width: 95%;
+    margin: auto;
+}
+.Restaurant-item
+{
+    width: 16.666%;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20%;
+    padding-bottom: 10px;
+}
+.inner
+{
+    background-color: lightblue;
+    border-radius: 10%;
+}
+.inner img
+{
+    width: 100%;
+    border-radius: 10% 10% 0% 0%;
+}
+@media screen and (max-width:1200px) and (min-width:992px){
+    .Restaurant-item
+    {
+        width: 25%;
+    }  
+    
+}
+@media screen and (max-width:992px) and (min-width:768px){
+    .Restaurant-item
+    {
+        width: 33.33%;
+    }
+}
+@media screen and (max-width:768px) and (min-width:600px){
+    .Restaurant-item
+    {
+        width: 50%;
+    }
+}
+@media screen and (max-width:600px){
+    .Restaurant-item
+    {
+        width: 100%;
+    }
+}
