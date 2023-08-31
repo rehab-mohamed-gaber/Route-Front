@@ -2,17 +2,48 @@
 {
     clear: both;
 }
-*
-{
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-h2{
+.home
+{
+    background-image: url(../images/bg-rest1.jpg);
+    background-size: cover ;
+    background-position: center center;
+    color: #fff;
+    text-align: left;
+    height: 100vh;
+    position: relative;
+}
+.home .home-content
+{
+    position: absolute;
+    bottom:20%;
+    left:5%;
+    /* transform: scale(1.2); */
+}
+.home .btn
+{
+    margin-top: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 7%;
+}
+.home .btn1
+{
+    background-color: #c1ab84;
+}
+.home p
+{
+    font-size: 250%;
     font-family: 'Dancing Script', cursive;
 }
-p
-{
+.Restaurant h1{
+    font-family: 'Dancing Script', cursive;
+}
+.Restaurant p{
     padding: 20px 0px;
     color: #888;
 }
@@ -31,18 +62,39 @@ p
     float: left;
     padding-left: 10px;
     padding-right: 10px;
-    border-radius: 20%;
+    border-radius: 10%;
     padding-bottom: 10px;
+
 }
 .inner
 {
     background-color: lightblue;
+    border-radius: 3%;
+    transition-property: background-color, border-radius ,transform;
+    transition-duration: .5s;
+    transition-delay: 0.2s;
+    transition-timing-function: ease-out ; 
+    transform-origin: center;
+    /* transition: background-color 1s .1s ease-out, border-radius 1s .1s ease-out , transform 1s .1s ease-out; */
+}
+.inner:hover 
+{
+    background-color: lightgoldenrodyellow;
     border-radius: 10%;
+    transform: scale(1.2);
 }
 .inner img
 {
-    width: 100%;
-    border-radius: 10% 10% 0% 0%;
+    background-color: #fff;
+    width: 100%; 
+    border-radius: 3%;
+    transition-property: border-radius;
+    transition-duration: .9s;
+    /* transition-delay: 0.2s; */
+}
+.inner img:hover 
+{
+    border-radius: 10%;
 }
 @media screen and (max-width:1200px) and (min-width:992px){
     .Restaurant-item
@@ -52,20 +104,56 @@ p
     
 }
 @media screen and (max-width:992px) and (min-width:768px){
+    .home .home-content
+    {
+        position: absolute;
+        bottom:20%;
+        left:3%;
+    }
     .Restaurant-item
     {
         width: 33.33%;
     }
+    .inner:hover 
+{
+    background-color: lightgoldenrodyellow;
+    border-radius: 10%;
+    transform: scale(1.1);
+}
 }
 @media screen and (max-width:768px) and (min-width:600px){
+    .home .home-content
+    {
+        position: absolute;
+        bottom:20%;
+        left:3%;
+    }
     .Restaurant-item
     {
         width: 50%;
     }
+    .inner:hover 
+    {
+        background-color: lightgoldenrodyellow;
+        border-radius: 10%;
+        transform: scale(1.1);
+    }
 }
 @media screen and (max-width:600px){
+    .home .home-content
+{
+    position: absolute;
+    bottom:20%;
+    left:3%;
+}
     .Restaurant-item
     {
         width: 100%;
+    }
+    .inner:hover 
+    {
+        background-color: lightgoldenrodyellow;
+        border-radius: 10%;
+        transform: scale(1.05);
     }
 }
